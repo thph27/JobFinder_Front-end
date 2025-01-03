@@ -1,0 +1,46 @@
+.manage-cv-container {
+}
+.manage-cv-container .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.manage-cv-container .card-body {
+    padding: 30px;
+}
+.manage-cv-container .card-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+.manage-cv-container .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+.manage-cv-container .form-control:focus {
+    border-color: #4B49AC;
+    box-shadow: 0 0 5px rgba(75, 73, 172, 0.2);
+}
+.manage-cv-container .table-responsive {
+    margin-top: 20px;
+}
+.manage-cv-container .table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.manage-cv-container .table-responsive table thead th {
+    background-color: #4B49AC;
+    color: #fff;
+    font-weight: 600;
+}
+.manage-cv-container .table-responsive table tbody td {
+    padding: 10px;
+    text-align: center;
+}
+.manage-cv-container .table-responsive table tbody td:nth-child(1) {
+    text-align: center;
+}   

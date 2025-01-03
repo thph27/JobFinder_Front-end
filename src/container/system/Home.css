@@ -1,0 +1,273 @@
+/* Style cho tiêu đề bảng */
+.card-title {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Style cho date picker */
+.ant-picker {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Style cho bảng */
+.table-responsive {
+    padding-top: 0 !important;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.table {
+    margin-top: 0;
+    width: 100%;
+    background: white;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    background: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    color: #444;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+
+.pagination {
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    color: #3498db;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background: #e9ecef;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.page-item.active .page-link {
+    background: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+/* Style cho nút Quay lại và Tiếp */
+.pagination .previous .page-link,
+.pagination .next .page-link {
+    background: #3498db;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.pagination .previous .page-link:hover,
+.pagination .next .page-link:hover {
+    background: #2980b9;
+}
+
+/* Style cho trường hợp không có dữ liệu */
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Style cho header của bảng */
+.table thead th {
+    padding: 15px;
+    background: #f8f9fa;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap; /* Ngăn text xuống dòng */
+}
+
+/* Style cho các cột trong bảng */
+.table th:first-child, 
+.table td:first-child {
+    padding-left: 20px; /* Thêm padding bên trái cho cột đầu tiên */
+}
+
+.table th:last-child,
+.table td:last-child {
+    padding-right: 20px; /* Thêm padding bên phải cho cột cuối */
+}
+
+/* Căn chỉnh các cột cụ thể */
+.table th.stt-column,
+.table td.stt-column {
+    width: 60px;
+    text-align: center;
+}
+
+.table th.action-column,
+.table td.action-column {
+    width: 150px;
+    text-align: center;
+}
+
+/* Đảm bảo các dòng có chiều cao đồng đều */
+.table tbody tr {
+    height: 50px;
+}
+
+/* Căn chỉnh nội dung trong ô */
+.table td {
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.pt-2 {
+    padding-top: 0 !important;
+}
+
+/* Nếu vẫn không hoạt động, thử thêm selector cụ thể hơn */
+.card-body .table-responsive.pt-2 {
+    padding-top: 0 !important;
+}
+
+.statistics-section {
+  padding: 30px 0;
+  margin: 0 15px;
+}
+
+.statistics-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.statistics-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 2px;
+}
+
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.legend-container {
+  flex: 0 0 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-right: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: #fff;
+  cursor: pointer;
+}
+
+.legend-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.legend-color {
+  width: 35px;
+  height: 25px;
+  margin-right: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.legend-text {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.chart-container {
+  flex: 0 0 500px;
+  padding: 20px;
+}
+
+.statistics-wrapper {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}

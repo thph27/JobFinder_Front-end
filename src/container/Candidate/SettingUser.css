@@ -1,0 +1,55 @@
+.setting-container {
+    padding: 20px;
+}
+.setting-container .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.setting-container .card-body {
+    padding: 30px;
+}
+.setting-container .card-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+.setting-container .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+.setting-container .form-control:focus {
+    border-color: #4B49AC;
+    box-shadow: 0 0 5px rgba(75, 73, 172, 0.2);
+}
+.setting-container .col-form-label {
+    font-weight: 600;
+    color: #555;
+}
+.setting-container .btn1-primary1 {
+    background: #4B49AC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.setting-container .btn1-primary1:hover {
+    background: #37358a;
+}
+.setting-container .btn1-primary1:focus {
+    box-shadow: 0 0 5px rgba(75, 73, 172, 0.2);
+}
+.setting-container .btn1-primary1:active {
+    background: #2d2b7a;
+}
+.setting-container .row {
+    margin-bottom: 20px;
+}
+.setting-container .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}

@@ -1,0 +1,15 @@
+/* Ẩn thanh cuộn ngang */
+.row.flex-nowrap::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hiệu ứng hover cho category card */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Hiệu ứng hover cho nút điều hướng */
+.nav-btn:hover {
+    background-color: #f8f9fa;
+}

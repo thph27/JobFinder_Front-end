@@ -1,0 +1,239 @@
+.job-detail-wrapper {
+    /* Phần container chính */
+    .job-post-company {
+        padding: 40px 0;
+    }
+
+    .job-post-company .container {
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        padding: 30px;
+    }
+
+    /* Phần header với logo công ty */
+    .single-job-items {
+        background: #fff;
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        box-shadow: -1px 1px 6px rgba(102, 56, 56, 0.05);
+        margin-bottom: 30px;
+    }
+
+    .job-items {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background: #fff;
+
+    }
+
+    .company-img {
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .company-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        border: 1px solid #eee;
+    }
+
+    .job-tittle {
+        padding-top: 0;
+        word-break: break-word;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .job-tittle h4 {
+        color: #333;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+
+    .job-tittle ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .job-tittle ul li {
+        color: #666;
+        font-size: 13px;
+    }
+
+    /* Phần thông tin chi tiết */
+    .post-details3, .post-details4 {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        box-shadow: -1px 1px 6px rgba(102, 56, 56, 0.05);
+        margin-bottom: 16px;
+        padding: 24px;
+    }
+
+    .small-section-tittle h4 {
+        border-left: 5px solid #00b14f;
+        padding-left: 8px;
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* Nút ứng tuyển */
+    .btn {
+        background: #00b14f;
+        border-radius: 3px;
+        color: #fff;
+        padding: 10px 40px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #218838;
+        transform: translateY(-2px);
+    }
+
+    /* Phần ảnh cover */
+    .slider-height2 {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .job-tittle ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .slider-height2 {
+            height: 200px;
+        }
+    }
+
+    /* Chỉnh sửa phần địa chỉ và thông tin công ty */
+    .post-details4 {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        padding: 25px;
+    }
+
+    .post-details4 span {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .post-details4 ul li {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .post-details4 ul li span {
+        color: #666;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    /* Điều chỉnh label cho địa chỉ */
+    .post-details4 ul li:first-child {
+        font-weight: 500;
+        color: #333;
+    }
+
+    /* Phần header với thông tin công ty */
+    .company-detail-overview {
+        align-items: center;
+        background: #fff;
+        display: flex;
+        padding: 20px;
+        position: relative;
+    }
+
+    #company-logo {
+        height: 110px;
+        margin-right: 24px;
+        width: 140px;
+    }
+
+    .company-image-logo {
+        align-items: center;
+        background: #fff;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        display: flex;
+        height: 140px;
+        justify-content: center;
+        position: relative;
+        top: -65px;
+        width: 140px;
+    }
+
+    .company-image-logo img {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .company-info {
+        padding-top: 5px;
+        word-break: break-word;
+    }
+
+    .company-detail-name {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .d-flex {
+        display: flex;
+        gap: 20px;
+    }
+
+    .website, .company-size {
+        font-size: 15px;
+        color: #666;
+    }
+
+    .website i, .company-size i {
+        color: #00b14f;
+        margin-right: 5px;
+    }
+
+    .website a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .website a:hover {
+        color: #00b14f;
+    }
+}

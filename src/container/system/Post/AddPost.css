@@ -1,0 +1,147 @@
+/* Form styling */
+.form-sample {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Labels */
+.col-form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.btn1-primary1 {
+  background: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn1-primary1:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Stats display */
+.company-stats {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.company-stats h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.company-stats p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Back button */
+.back-button {
+  color: #dc3545;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+/* Markdown editor */
+.rc-md-editor {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-form-label {
+    margin-bottom: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Company post stats section */
+.company-remaining-posts {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.company-remaining-posts h4 {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.post-count {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px 0;
+}
+
+.post-count p {
+  margin: 0;
+  font-size: 15px;
+  color: #495057;
+}
+
+.post-count .normal-post {
+  color: #0056b3;
+  font-weight: 500;
+}
+
+.post-count .hot-post {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.post-count i {
+  margin-right: 10px;
+  font-size: 16px;
+}

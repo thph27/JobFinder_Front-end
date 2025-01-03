@@ -1,0 +1,68 @@
+.user-info-container {
+    padding: 20px;
+}
+
+.user-info-container .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.user-info-container .card-body {
+    padding: 30px;
+}
+.user-info-container .card-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+.user-info-container .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+.user-info-container .form-control:focus {
+    border-color: #4B49AC;
+    box-shadow: 0 0 5px rgba(75, 73, 172, 0.2);
+}
+.user-info-container .col-form-label {
+    font-weight: 600;
+    color: #555;
+}
+.user-info-container .btn1-primary1 {
+    background: #4B49AC;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.user-info-container .btn1-primary1:hover {
+    background: #3c3a8c;
+    transform: translateY(-2px);
+}
+.user-info-container .btn1-primary1:focus {
+    box-shadow: 0 0 5px rgba(75, 73, 172, 0.2);
+}
+.user-info-container .btn1-primary1:active {
+    background: #2d2b7a;
+}
+.user-info-container .row {
+    margin-bottom: 20px;
+}
+.user-info-container .box-img-preview {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user-info-container .box-img-preview:hover {
+    border-color: #4B49AC;
+}
+
