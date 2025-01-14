@@ -166,7 +166,7 @@ const DetailCompany = () => {
                                         <i className="fas fa-map-marker-alt" />{dataCompany.address}
                                     </p>
                                     <div className="company-map">
-                                        <p className="map">Bản đồ tr�� sở chính:</p>
+                                        <p className="map">Bản đồ trụ sở chính:</p>
                                         <iframe width="100%" height={270} frameBorder={0} style={{ border: 0 }} src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCVgO8KzHQ8iKcfqXgrMnUIGlD-piWiPpo&q=${dataCompany.address}&zoom=15&language=vi`} allowFullScreen>
                                         </iframe>
                                     </div>

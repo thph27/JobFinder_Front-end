@@ -22,7 +22,7 @@ const Header = () => {
         <nav className="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
                 <Link className="navbar-brand brand-logo mr-5" to={"/admin/"}><img src="/assets/img/logo/logoNew.png" style={{ width: '75px', height: 'auto' }} className="mr-2" alt="logo" /></Link>
-                <a className="navbar-brand brand-logo-mini" href="index.html"><img src="/assets/img/logo/logoNew.png" style={{ width: '55px', height: 'auto' }} alt="logo" /></a>
+                <a className="navbar-brand brand-logo-mini" href="index.html"><img src="/assets/img/logo/logoNew.png" style={{ width: '45px', height: 'auto' }} alt="logo" /></a>
             </div>
             <div className="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <button className="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">

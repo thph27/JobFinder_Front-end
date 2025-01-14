@@ -297,7 +297,7 @@ const SettingUser = () => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="form-group row">
-                                        <label className="col-sm-3 col-form-label" style={{paddingLeft: '50px', paddingRight: '0'}}>Bật tìm việc</label>
+                                        <label className="col-sm-3 col-form-label" style={{paddingLeft: '50px', paddingRight: '0'}}>Cho phép nhà tuyển dụng xem CV</label>
                                         <div className="col-sm-9 mt-3">
                                             <input name="isFindJob" onChange={handleOnChangeCheckBox} checked={inputValues.isFindJob} style={{width: '18px', height: '18px' }} type="checkbox"></input>
                                         </div>

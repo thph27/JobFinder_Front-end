@@ -119,6 +119,15 @@ const ManageCvCandidate = (props) => {
 
                                 </tbody>
                             </table>
+                            {
+                                dataCv && dataCv.length == 0 && (
+                                    <div style={{ textAlign: 'center', paddingTop: '15px', paddingBottom:'30px' }}>
+
+                                        Không có dữ liệu để hiển thị!
+
+                                    </div>
+                                )
+                            }
                         </div>
                     </div>
                     <ReactPaginate

@@ -119,16 +119,17 @@ const FilterCv = () => {
     const handleChange = async (value, detail, type) => {
         if (!value) {
             if (type) {
-                setInputValue({
-                    ...inputValue,
-                    [type]: ''
-                });
                 if (type === 'categoryJobCode') {
                     setListSkills([]);
                     setInputValue(prev => ({
                         ...prev,
                         categoryJobCode: '',
                         listSkills: []
+                    }));
+                } else {
+                    setInputValue(prev => ({
+                        ...prev,
+                        [type]: ''
                     }));
                 }
                 return;
@@ -213,8 +214,12 @@ const FilterCv = () => {
                                         }
                                         showSearch
                                         allowClear
-                                        style={{ width: '90%' }} size='default' onChange={(value,detail) => handleChange(value,detail,'categoryJobCode')} value={inputValue.categoryJobCode} options={dataJobType}>
-                                    </Select>
+                                        style={{ width: '90%' }}
+                                        size='default'
+                                        onChange={(value, detail) => handleChange(value, detail, 'categoryJobCode')}
+                                        value={inputValue.categoryJobCode || undefined}
+                                        options={dataJobType}
+                                    />
                                 </Col>
                                 <Col xs={12} xxl={12}>
                                     <div>
@@ -226,9 +231,12 @@ const FilterCv = () => {
                                         }
                                         showSearch
                                         allowClear
-                                        style={{ width: '90%' }} size='default' onChange={(value,detail) => handleChange(value,detail,'experienceJobCode')} value={inputValue.experienceJobCode} options={dataExp}>
-
-                                    </Select>
+                                        style={{ width: '90%' }}
+                                        size='default'
+                                        onChange={(value, detail) => handleChange(value, detail, 'experienceJobCode')}
+                                        value={inputValue.experienceJobCode || undefined}
+                                        options={dataExp}
+                                    />
                                 </Col>
                             </Row>
                             <Row justify='space-around' className='mt-5 mb-5 ml-3'>
@@ -242,8 +250,12 @@ const FilterCv = () => {
                                         }
                                         showSearch
                                         allowClear
-                                        style={{ width: '90%' }} size='default' onChange={(value,detail) => handleChange(value,detail,'salaryCode')} value={inputValue.salaryCode} options={dataSalary}>
-                                    </Select>
+                                        style={{ width: '90%' }}
+                                        size='default'
+                                        onChange={(value, detail) => handleChange(value, detail, 'salaryCode')}
+                                        value={inputValue.salaryCode || undefined}
+                                        options={dataSalary}
+                                    />
                                 </Col>
                                 <Col xs={12} xxl={12}>
                                     <div>
@@ -255,9 +267,12 @@ const FilterCv = () => {
                                         }
                                         showSearch
                                         allowClear
-                                        style={{ width: '90%' }} size='default' onChange={(value,detail) => handleChange(value,detail,'provinceCode')} value={inputValue.provinceCode} options={dataProvince}>
-
-                                    </Select>
+                                        style={{ width: '90%' }}
+                                        size='default'
+                                        onChange={(value, detail) => handleChange(value, detail, 'provinceCode')}
+                                        value={inputValue.provinceCode || undefined}
+                                        options={dataProvince}
+                                    />
                                 </Col>
                             </Row>
                             <Row justify='space-around' className='mt-5 mb-5 ml-3'>
@@ -273,15 +288,14 @@ const FilterCv = () => {
                                             width: '100%',
                                         }}
                                         placeholder="Chọn chuyên môn"
-                                        onChange={handleChange}
+                                        onChange={(value, detail) => handleChange(value, detail)}
                                         options={listSkills}
-                                        value={inputValue.listSkills}
+                                        value={inputValue.listSkills || undefined}
                                         filterOption={(input, option) =>
                                             (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
                                         }
                                         showSearch
-                                    >
-                                    </Select>
+                                    />
                                 </Col>
                             </Row>
                         </div>
